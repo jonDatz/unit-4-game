@@ -1,0 +1,112 @@
+/* GOOGLE FONTS ADDED */
+/* font-family: 'Pacifico', cursive;
+font-family: 'Nunito', sans-serif; */
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    'space space space space space space'
+    'header header header header header header'
+    'left rules rules rules rules right'
+    'left counter counter counter counter right'
+    'left crystals crystals crystals crystals right'
+    'left footer footer footer footer right';
+    grid-template-columns: 10% 8% auto auto 8% 10%;
+    grid-gap: 5px;
+    grid-template-rows: 50px 80px auto auto auto auto;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 4px;
+}
+
+.header {
+    background-color: rgb(95, 148, 228);
+    grid-area: header;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.9rem;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+    border-radius: 4px;
+
+}
+
+.instructions {
+    grid-area: rules;
+    background-color: rgb(128, 128, 128);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.numbers {
+    grid-area: counter;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#randomNumber {
+    background-color: aliceblue;
+    height: 200px;
+    width: 250px;
+    top: 50%;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    font-size: 2.2rem;
+}
+
+#userScore {
+    background-color: aliceblue;
+    height: 200px;
+    width: 250px;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
+    font-size: 2.2rem;
+}
+
+#winsLosses {
+    background-color: aliceblue;
+    height: 200px;
+    width: 250px;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
+    font-size: 2.2rem;
+}
+
+
+
+.crystals {
+    grid-area: crystals;
+    overflow: hidden;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 4px;
+}
+
