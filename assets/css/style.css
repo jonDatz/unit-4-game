@@ -4,6 +4,7 @@ font-family: 'Nunito', sans-serif; */
 
 body {
     background-color: black;
+    background-image: url('../images/bg.png')
 }
 
 .container {
@@ -17,37 +18,58 @@ body {
     'left footer footer footer footer right';
     grid-template-columns: 10% 8% auto auto 8% 10%;
     grid-gap: 5px;
-    grid-template-rows: 50px 80px auto auto auto auto;
+    grid-template-rows: 45px 80px auto auto auto auto;
     font-family: 'Nunito', sans-serif;
     border-radius: 4px;
 }
 
 .header {
     background-color: rgb(95, 148, 228);
+    color: aliceblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     grid-area: header;
     grid-column-start: 3;
     grid-column-end: 5;
     font-family: 'Pacifico', cursive;
-    font-size: 1.9rem;
+    font-size: 2.6rem;
     text-align: center;
-    padding: 30px 10px 10px 10px;
+    padding: 20px 10px 10px 30px;
     border-radius: 4px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 .instructions {
     grid-area: rules;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(155, 155, 155);
     grid-column-start: 3;
     grid-column-end: 5;
-    padding: 10px;
+    padding: 10px 60px 10px 60px;
     border-radius: 4px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+ol {
+    list-style-type: circle;
+    padding: 0px 30px 0px 30px;
+
+}
+
+#rules {
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 2.0rem;
+    color: aliceblue;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
 }
 
 h3 {
-    font-weight: bold;
-    font-size: 1.4rem;
+    font-family: 'Pacifico', cursive;
 }
+
 
 .numbers {
     grid-area: counter;
@@ -61,6 +83,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -108,5 +131,16 @@ h3 {
     background-color: aliceblue;
     padding: 10px;
     border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
 }
 
+img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+li {
+    padding: 5px 0px 5px 0px;
+}
