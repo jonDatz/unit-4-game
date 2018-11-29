@@ -17,6 +17,8 @@ var userScore = 0;
 var wins = 0;
 var losses = 0;
 
+// *** Initial write to the screen *** //
+
 $('#jsUserScore').text(userScore);
 $('#jsWins').text('Wins: ' + wins);
 $('#jsLosses').text('Losses: ' + losses);
@@ -26,6 +28,8 @@ console.log(randNum1);
 console.log(randNum3);
 console.log(randNum2);
 console.log(randNum4);
+
+// *** OnClick Functions *** //
 
 $('#ruby').on('click', function(){
     userScore = userScore + randNum1;
@@ -61,6 +65,7 @@ $('#steven').on('click', function(){
     winLose();
 });
 
+// *** Win & Loss logic *** //
 
 function winLose() {
 
@@ -76,6 +81,8 @@ function winLose() {
     }
     
 }
+
+// *** Reset Function *** //
 
 function reset (){
     computerNum = Math.floor(Math.random() * 101 + 19);
@@ -97,8 +104,6 @@ function reset (){
     $('#jsRandom').text(computerNum);
 
 }
-
-
 
 });
 
