@@ -18,7 +18,7 @@ body {
     'left footer footer footer footer right';
     grid-template-columns: 10% 8% auto auto 8% 10%;
     grid-gap: 5px;
-    grid-template-rows: 45px 80px auto auto auto auto;
+    grid-template-rows: 10px 80px auto auto auto auto;
     font-family: 'Nunito', sans-serif;
     border-radius: 4px;
 }
@@ -73,6 +73,7 @@ h3 {
 
 .numbers {
     grid-area: counter;
+    overflow: hidden;
     grid-column-start: 3;
     grid-column-end: 5;
     background-color: aquamarine;
@@ -96,7 +97,7 @@ h3 {
     display: inline-block;
     margin: 5px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
-    font-size: 2.2rem;
+    font-size: 2.2em;
 }
 
 #userScore {
@@ -107,7 +108,7 @@ h3 {
     display: inline-block;
     margin: 5px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
-    font-size: 2.2rem;
+    font-size: 2.2em;
 }
 
 #winsLosses {
@@ -118,7 +119,8 @@ h3 {
     display: inline-block;
     margin: 5px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
-    font-size: 2.2rem;
+    font-size: 2.2em;
+
 }
 
 
